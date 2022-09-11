@@ -25,7 +25,7 @@ client.on("messageCreate", (message) => {
     console.log("-------------------------------------------------------------------------")
 
     const embed = new MessageEmbed()
-	.setTitle('NewMoon DarkWeb')
+	.setTitle('MTRP DarkWeb')
   .setDescription((message.author.tag) + 'sent' + '```' + (message.content) + '```' + "in darkchat" )
 	.setColor('#0099ff')
  
@@ -35,7 +35,7 @@ client.on("messageCreate", (message) => {
   request.open("POST", Myhook);
   request.setRequestHeader('Content-type', 'application/json');
   const params = {
-    username: "NewMoon DarkWeb",
+    username: "MTRP DarkWeb",
     avatar_url: "https://cdn.discordapp.com/attachments/998675140042817567/1006392481748889712/unnamed.png",
     title: "??? BY COPY-HOOK",
     content:  "<@!" + message.author.id + ">" + "\n \n" + "Message sent By" + "-" + message.author.username + " "+ "\n" + "```" + " "+ message.content +"```"
